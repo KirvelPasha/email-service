@@ -1,5 +1,6 @@
 package com.mmf.service;
 
+import com.mmf.service.dto.EmailSendDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;
@@ -16,11 +17,11 @@ public class MailSenderService {
         this.javaMailSender = javaMailSender;
     }
 
-    public void sendMailWithStudentInfo() {
+    public void sendMail( EmailSendDto emailSendDto) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setTo("kirvelpasha99@gmail.com");
+        simpleMailMessage.setTo("");
         simpleMailMessage.setSubject(subject);
-        simpleMailMessage.setText("Test");
+        simpleMailMessage.setText("");
 
 
         javaMailSender.send(simpleMailMessage);

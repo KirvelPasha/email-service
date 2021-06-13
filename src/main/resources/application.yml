@@ -1,5 +1,4 @@
 spring:
-
   application:
     name: message-sender-service
 
@@ -9,6 +8,12 @@ spring:
     protocol: smtp
     username:
     password:
+
+  data:
+    mongodb:
+      host: localhost
+      port: 2717
+      database: emailStore
 
 
 server:

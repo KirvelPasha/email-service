@@ -10,6 +10,15 @@ spring:
     username:
     password:
 
+  data:
+    mongodb:
+      host: localhost
+      port: 2717
+      database: emailStore
+#      username: test
+#      password: test
+
+
 
 server:
   port: 8082
